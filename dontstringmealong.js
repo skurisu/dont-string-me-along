@@ -31,10 +31,21 @@
 
 (function () {
 
+  var part = "kurisusar";
+  var whole = "sarah kurisu";
+
   function circVar (str1,str2) {
-    // concat str2 with str2
-    // check for str1 within concat str2 (check length of str1)
+    var double = str2.concat(str2);
+
+    if(double.indexOf(str2) === 0) {
+      return true;
+    }
+    else {
+      return false;
+    }
   }
+
+  circVar(part,whole);
 })();
 
 (function () {
