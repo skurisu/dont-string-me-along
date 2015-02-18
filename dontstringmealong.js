@@ -37,7 +37,7 @@
   function circVar (str1,str2) {
     var double = str2.concat(str2);
 
-    if(double.indexOf(str2) === 0) {
+    if(double.indexOf(str1) !== -1) {
       return true;
     }
     else {
